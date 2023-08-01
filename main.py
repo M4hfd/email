@@ -9,7 +9,7 @@ password = os.getenv("PASSWORD")
 server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
 server.login(login, password)
 
-text =("""
+text ="""
 Привет, %friend_name%! %my_name% приглашает тебя на сайт %website%!
 
 %website% — это новая версия онлайн-курса по программированию. 
@@ -27,7 +27,7 @@ text =("""
 Регистрируйся → %website%  
 На курсы, которые еще не вышли, можно подписаться и получить уведомление о релизе сразу на имейл.
 
-""")
+"""
 friend_name = "СТЕПАН"
 my_name = "Игорь"
 site = "https://dvmn.org/referrals/XLCaM42NxT03w3z0cxvrKZ6Q0nOnUOG53TdNCpNe/"
